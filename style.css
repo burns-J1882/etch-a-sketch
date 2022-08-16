@@ -19,7 +19,6 @@ h1 {
     width: 600px;
     box-shadow: #422800 4px 4px 0 0;
     border: 1px solid #422800;
-
 }
 
 .column {
@@ -39,12 +38,8 @@ h1 {
 
 }
 
-.row:hover {
-    /*  background-color: black; */
-}
 
-
-/* CSS */
+/* button */
 .btn {
   background-color: #fbeee0;
   border: 2px solid #422800;
