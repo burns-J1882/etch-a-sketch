@@ -62,7 +62,7 @@ function changeColor() {
 const boxes = document.querySelectorAll('.row');
     for (const box of boxes) {
         box.addEventListener("mouseover", () => {
-            box.setAttribute('style', 'background-color: black');
+            box.setAttribute('style', 'background-color: #422800;');
         });
     }
 };
