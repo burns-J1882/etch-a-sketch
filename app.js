@@ -22,8 +22,8 @@ for (c = 0; c < 16; c++) {
         row.classList.add('row');
         column.appendChild(row);
     }
-    changeColor();
 };
+clickTrigger();
 };
 
 //click button to change grid size
@@ -53,7 +53,7 @@ function chooseSize() {
             column.appendChild(row);
         };
     };
-    changeColor();
+    clickTrigger();
 };
 
 
@@ -66,3 +66,7 @@ const boxes = document.querySelectorAll('.row');
         });
     }
 };
+//make change color start after click
+function clickTrigger (){
+    myContainer.addEventListener('click', changeColor);
+    };
