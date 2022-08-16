@@ -33,6 +33,12 @@ btn.addEventListener('click', chooseSize);
 //delete original grid and replace
 function chooseSize() {
     let boxSize = prompt("how wide do you want your grid?", 0);
+    if (boxSize < 2 || boxSize === null) {
+        alert('Please enter a number larger than 1');
+        console.log(boxSize);
+    } else if (boxSize > 100){
+        alert('Please enter a number less than 100')
+    } else{
      //delete the old grid
     const rows = document.querySelectorAll('.row');
     const cols = document.querySelectorAll('.column');
@@ -54,6 +60,7 @@ function chooseSize() {
         };
     };
     clickTrigger();
+};
 };
 
 
